@@ -1,0 +1,34 @@
+name: AdvancedBanSystem
+version: '1.0.0'
+main: com.example.advancedBanSystem.AdvancedBanSystem
+api-version: '1.21'
+
+commands:
+  ban:
+    description: Banna un giocatore.
+    usage: /ban <player> [reason]
+    permission: advancedbansystem.command.ban
+  unban:
+    description: Sbanna un giocatore.
+    usage: /unban <player>
+    permission: advancedbansystem.command.unban
+  ipban:
+    description: Banna un giocatore per IP.
+    usage: /ipban <player> [reason]
+    permission: advancedbansystem.command.ipban
+  ipunban:
+    description: Sbanna un IP.
+    usage: /ipunban <ip>
+    permission: advancedbansystem.command.ipunban
+  blacklist:
+    description: Gestisci la blacklist.
+    usage: /blacklist add|remove <player/ip>
+    permission: advancedbansystem.command.blacklist
+  banlist:
+    description: Mostra la lista dei giocatori bannati.
+    usage: /banlist
+    permission: advancedbansystem.command.banlist
+  blacklistlist:
+    description: Mostra la lista nera.
+    usage: /blacklist list
+    permission: advancedbansystem.command.blacklist.list
