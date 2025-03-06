@@ -36,7 +36,7 @@
 ## Installazione
 
 1. **Scarica il Plugin:**
-   - Scarica il file JAR del plugin da [qui](https://github.com/tuo-username/AdvancedBanSystem/releases).
+   - Scarica il file JAR del plugin da [qui](https://github.com/matty47ghigo/AdvancedBanSystem/releases).
 
 2. **Carica il Plugin sul Server:**
    - Copia il file JAR nella cartella `plugins` del tuo server Minecraft.
