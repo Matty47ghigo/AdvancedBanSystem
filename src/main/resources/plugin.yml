@@ -1,34 +1,60 @@
 name: AdvancedBanSystem
-version: '1.0.0'
 main: com.example.advancedBanSystem.AdvancedBanSystem
-api-version: '1.21'
+version: 1.0.0
+api-version: 1.20
+
+permissions:
+  advancedbansystem.ban:
+    description: "Permesso per bannare un giocatore"
+    default: op
+  advancedbansystem.unban:
+    description: "Permesso per sbannare un giocatore"
+    default: op
+  advancedbansystem.ipban:
+    description: "Permesso per bannare un IP"
+    default: op
+  advancedbansystem.ipunban:
+    description: "Permesso per sbannare un IP"
+    default: op
+  advancedbansystem.blacklist.add:
+    description: "Permesso per aggiungere alla blacklist"
+    default: op
+  advancedbansystem.blacklist.remove:
+    description: "Permesso per rimuovere dalla blacklist"
+    default: op
+  advancedbansystem.banlist:
+    description: "Permesso per visualizzare la lista dei bannati"
+    default: op
+  advancedbansystem.blacklist.list:
+    description: "Permesso per visualizzare la blacklist"
+    default: op
 
 commands:
   ban:
-    description: Banna un giocatore.
-    usage: /ban <player> [reason]
-    permission: advancedbansystem.command.ban
+    description: "Banna un giocatore"
+    usage: "/ban <player> [reason]"
+    permission: advancedbansystem.ban
   unban:
-    description: Sbanna un giocatore.
-    usage: /unban <player>
-    permission: advancedbansystem.command.unban
+    description: "Sbanna un giocatore"
+    usage: "/unban <player>"
+    permission: advancedbansystem.unban
   ipban:
-    description: Banna un giocatore per IP.
-    usage: /ipban <player> [reason]
-    permission: advancedbansystem.command.ipban
+    description: "Banna un IP"
+    usage: "/ipban <player> [reason]"
+    permission: advancedbansystem.ipban
   ipunban:
-    description: Sbanna un IP.
-    usage: /ipunban <ip>
-    permission: advancedbansystem.command.ipunban
+    description: "Sbanna un IP"
+    usage: "/ipunban <ip>"
+    permission: advancedbansystem.ipunban
   blacklist:
-    description: Gestisci la blacklist.
-    usage: /blacklist add|remove <player/ip>
-    permission: advancedbansystem.command.blacklist
+    description: "Gestisci la blacklist"
+    usage: "/blacklist add|remove <player/ip>"
+    permission: advancedbansystem.blacklist.add
   banlist:
-    description: Mostra la lista dei giocatori bannati.
-    usage: /banlist
-    permission: advancedbansystem.command.banlist
+    description: "Mostra la lista dei bannati"
+    usage: "/banlist"
+    permission: advancedbansystem.banlist
   blacklistlist:
-    description: Mostra la lista nera.
-    usage: /blacklist list
-    permission: advancedbansystem.command.blacklist.list
+    description: "Mostra la blacklist"
+    usage: "/blacklist list"
+    permission: advancedbansystem.blacklist.list
